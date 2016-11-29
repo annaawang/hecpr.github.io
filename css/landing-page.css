@@ -26,6 +26,8 @@ p {
     font-weight: 400;
 }
 
+/* INTRO ___________________________________*/
+
 .topnav {
     font-size: 14px; 
 }
@@ -76,6 +78,27 @@ p {
 }
 
 
+/* FLAGS ___________________________________*/ 
+
+.flags {
+    display: block;
+    padding-top: 2px;
+}
+
+.flag-item {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+}
+
+.flag-item img {
+    width: 20px;
+    height: 12px;
+}
+
+.flag-item img:hover {
+    opacity: .70;
+}
 
 @media(max-width:767px) {
     .intro-message {
@@ -108,6 +131,9 @@ p {
     }
 }
 
+
+/* CONTENT SECTIONS ___________________________________*/ 
+
 .network-name {
     text-transform: uppercase;
     font-size: 14px;
@@ -130,12 +156,17 @@ p {
     
 }
 
+.content-section-d {
+    padding: 50px 0;
+}
+
 .content-section-c h3 {
     color: #FFF;
-    font-family: "Lora", serif;
+    font-family: "Lato", sans-serif;
     font-size: 1.5em;
     font-weight: 400;
-    padding: 50px 0 20px 0;
+    letter-spacing: 0.3px;
+    padding: 0 0 20px 0;
 }
 
 .content-section-c p {
@@ -216,6 +247,9 @@ p {
     padding: 0 5px;
 }
 
+
+/* CONTACT SECTION ___________________________________*/ 
+
 .contact-section {
     text-align: center;
     margin: 0 auto;
@@ -230,7 +264,7 @@ p {
 }
 .point {
     display: block;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
 }
 
 .point i {
@@ -238,19 +272,23 @@ p {
 }
 .point-img{
     display: inline-block;
-    width: 10%;
-    float: left;
+    width: 13%;
+    padding-right: 10px;
+    vertical-align: top;
 }
 
 .point-text {
     display: inline-block;
-    width: 90%;
-    float: right;
+    width: 85%;
 }
 
 .contact-section .btn {
     margin-top: 30px;
 }
+
+
+
+/* MEDIA QUERIES ___________________________________*/ 
 
 @media(max-width:1199px) {
     ul.banner-social-buttons {
@@ -275,13 +313,82 @@ p {
     .contact-section {
         padding: 0 150px;
     }   
+
+    .content-section-a h3 {
+        padding-bottom: 30px;
+    }
+
+    .content-section-c {
+        overflow-x: hidden;
+    }
+
+    .content-section-d p {
+        padding: 0 20px;
+    }
 }
 
 @media(max-width:767px) {
 
     .contact-section {
-        padding: 0 100px;
+        padding: 0 25px;
     }   
+
+    .content-section-c p {
+        margin: 15px 50px;
+    }
+
+    .content-section-c h3 {
+        text-align: center;
+    }
+
+    .content-section-c img {
+        padding-top: 50px;
+        max-width: 90%;
+    }
+
+    .content-section-c {
+        padding: 30px 0;
+    }
+
+    .content-section-a h3 {
+        padding-bottom: 30px;
+    }
+
+    .content-section-d {
+        padding: 50px 50px;
+    }
+
+    .flags {
+        display: block;
+        padding-top: 2px;
+    }
+
+    .flag-item {
+        display: inline-block;
+        width: 10%;
+        text-align: center;
+    }
+
+    .flag-item img {
+        width: 25px;
+        height: 17px;
+    }
+
+    .navbar li {
+        text-align: center;
+    }
+
+    .point {
+        padding: 10px 10px;
+    }
+
+    .point-img{
+        padding-right: 15px;
+    }
+
+    .point p {
+        margin: 0;
+    }
 }
 
 footer {
